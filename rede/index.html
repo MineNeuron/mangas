@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="contacts">
+            <div class="contact" data-contact="Ning Xu (Senior Software Engineer  Mapping, Machine Learning)">
+                <img src="Ning.jpg" alt="Ning Xu" class="contact-photo"> Ning Xu <br> Senior Software Engineer
+            </div>
+            <div class="contact" data-contact="Amanda De Oliviera (Recruiting)">
+                <img src="Amanda.jpg" alt="Amanda De Oliviera" class="contact-photo"> Amanda De Oliviera <br> Recruiting
+            </div>
+        </div>
+        <div class="chat-window">
+            <div class="chat-header">
+                <span id="chat-with">Chat: </span>
+            </div>
+<div class="chat-messages" id="chat-messages">
+    <!-- Mensagens aqui -->
+</div>
+
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Type a message..." />
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
