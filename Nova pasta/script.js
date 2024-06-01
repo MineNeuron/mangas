@@ -6,18 +6,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const userPlacement = document.getElementById('user-placement');
 
     const data = {
-        candidates: 150,
+        candidates: 3,
         stages: [
-            { stage: 'Etapa 1', approvals: 100 },
-            { stage: 'Etapa 2', approvals: 80 },
-            { stage: 'Etapa 3', approvals: 50 }
+            { stage: 'Stage 1', approvals: '...' },
+            { stage: 'Stage 2', approvals: 75 },
+            { stage: 'Stage 3', approvals: 50 },
+            { stage: 'Stage 4', approvals: 3 },
+            { stage: 'Stage 5', approvals: 3 }
         ],
         ranking: [
-            { name: 'Alice', score: 95 },
-            { name: 'Bob', score: 90 },
-            { name: 'Charlie', score: 85 },
-            { name: 'Você', score: 80 },
-            { name: 'David', score: 75 }
+            { name: '.......', score: 955 },
+            { name: '.......', score: 910 },
+            { name: '.......', score: 835 },
+            { name: '.......', score: 850 },
+            { name: '.......', score: 765 }
         ]
     };
 
@@ -27,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Atualiza as aprovações por etapa
     data.stages.forEach(stage => {
         const li = document.createElement('li');
-        li.textContent = `${stage.stage}: ${stage.approvals} aprovações`;
+        li.textContent = `${stage.stage}: ${stage.approvals}`;
         approvalStages.appendChild(li);
     });
 
@@ -43,6 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (userRank) {
         userPlacement.textContent = `${userRank.name}: ${userRank.score} pontos`;
     } else {
-        userPlacement.textContent = 'Não classificado';
+        userPlacement.textContent = 'Classificado';
     }
 });
