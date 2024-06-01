@@ -1,9 +1,9 @@
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans", "Helvetica", "sans-serif";
     background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
+    padding: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,21 +31,22 @@ h1 {
 }
 
 .summary-item {
-    background-color: #ecf0f1;
-    padding: 20px;
+    background-color: #34495e;
+    padding: 0;
     border-radius: 8px;
     width: 30%;
     text-align: center;
 }
 
 .summary-item h2 {
-    color: #3498db;
+    color: #ffffff;
     margin-bottom: 10px;
 }
 
 .summary-item p,
 .summary-item ul {
-    font-size: 18px;
+    font-size: 16px;
+    color: white;
 }
 
 .summary-item ul {
@@ -56,16 +57,21 @@ h1 {
 .user-ranking {
     margin-top: 20px;
     text-align: center;
-    background-color: #ecf0f1;
+    background-color: #34495e;
     padding: 20px;
     border-radius: 8px;
 }
 
 .user-ranking h2 {
-    color: #3498db;
+    color: white;
     margin-bottom: 10px;
 }
 
 .user-ranking p {
     font-size: 18px;
+    color: white;
+}
+p#total-candidates {
+    font-size: 20pt;
+    font-weight: 900;
 }
