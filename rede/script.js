@@ -120,3 +120,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Simular resposta após 5 segundos para demonstração
     //setInterval(() => simulateResponse('Esta é uma resposta automática.'), 5000);
 });
+window.addEventListener("contextmenu", function(e) { e.preventDefault(); })
