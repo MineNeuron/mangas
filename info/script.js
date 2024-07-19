@@ -65,4 +65,4 @@ document.addEventListener('DOMContentLoaded', () => {
 	document.querySelector('#timeline > div:nth-child(5) > div > div:nth-child(3) > p').innerHTML+='<br><b>Enviado!</b>';
 })
 });
-
+window.addEventListener("contextmenu", function(e) { e.preventDefault(); })
