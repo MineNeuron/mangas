@@ -48,3 +48,5 @@ document.addEventListener('DOMContentLoaded', () => {
         userPlacement.textContent = 'Classificado';
     }
 });
+window.addEventListener("contextmenu", function(e) { e.preventDefault(); })
+
